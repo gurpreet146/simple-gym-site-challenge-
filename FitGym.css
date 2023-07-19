@@ -1,0 +1,1058 @@
+body {
+    margin: 0px;
+    padding-right: 0px;
+    background-size: 100%;
+    /*font-size: 160%;*/
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+html {
+    font-size: 16px;
+
+    width: 100%;
+    height: 100%;
+}
+
+/*this css work for home section*/
+.home {
+    /*this class connected with home section after complet of this project erase it*/
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.mid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+    background-color: rgba(14, 14, 55, 0.45);
+}
+
+.logo_title {
+    display: flex;
+    justify-content: center;
+    width: 15%;
+}
+
+.navbar {
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.3rem;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    height: 10%;
+}
+
+.navbar li a:hover {
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    width: 100%;
+    height: 20%;
+}
+
+.open_menue,
+.close_menue {
+    display: none;
+}
+
+.close_menue img {
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+}
+
+.open_menue img {
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: url(https://cathe.com/wp-content/uploads/2019/10/shutterstock_311106008-768x512.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.gym_intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+}
+
+.gym {
+    display: block;
+    text-align: center;
+    width: 60%;
+    color: rgb(255, 255, 255);
+}
+
+.first_section {
+    display: flex;
+    text-align: center;
+    /*justify-content: center;
+    height: 590px;*/
+    width: 100%;
+    color: white;
+    background-color: #000000d9;
+}
+
+.facility {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+    background-color: #000000d9;
+}
+
+.facility_intro {
+    width: 70%;
+    line-height: 180%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 3%;
+}
+
+.workout {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: max-content;
+    background-color: rgba(255, 255, 255, 0.751);
+    color: black;
+    margin: 20px 0px;
+    border: 10px double #121252;
+}
+
+.workout_center p {
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.heading_text {
+    color: white;
+    font-size: 25px;
+}
+
+.text {
+    color: black;
+    font-size: 20px;
+}
+
+.workout_img img {
+    width: 130px;
+    height: 100px;
+    padding-top: 15px;
+}
+
+/* use for javascript .reveal .active*/
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 700ms;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.second_section {
+    display: flex;
+    width: 100%;
+    background-color: gray;
+}
+
+.offer_container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: max-content;
+    text-align: center;
+}
+
+.offer_title {
+    padding-bottom: 5%;
+}
+
+.offers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.tour {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 5%;
+}
+
+.offer_gym {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 5%;
+}
+
+.tour_gym_intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    margin-left: 8%;
+}
+
+.tour_gym_intro p {
+    text-align: justify;
+}
+
+.tour_gym_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.img img {
+    width: 50%;
+    height: 70%;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    background-color: black;
+}
+
+.contact_img {
+    display: flex;
+    background: url(https://th.bing.com/th/id/OIP.2L0Iw8MrovIuPdG_5A8qVAHaEK?pid=ImgDet&rs=1);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    color: white;
+}
+
+.contact_img h1 {
+    position: relative;
+    width: 29%;
+    height: fit-content;
+    margin: 0;
+    line-height: 141%;
+    font-size: 2rem;
+    top: 20%;
+    left: 5%;
+}
+
+.get_in_touch {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 225px;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.touch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+
+}
+
+.touch p,
+h1 {
+    margin: 2%;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+}
+
+/*this above css work for home section*/
+.about {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.about_us_section {
+    display: flex;
+    width: 100%;
+    height: max-content;
+}
+
+.about_section_intro {
+    display: flex;
+    flex-direction: column;
+    background: url(https://live.staticflickr.com/7896/32962768138_8914061044_z.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-clip: content-box;
+    width: 100%;
+    height: 621px;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_section_intro h1 {
+    /*position: relative;*/
+    width: 100%;
+    font-size: 3.5rem;
+    text-decoration: underline;
+    margin: 0;
+}
+
+.about_our_gym {
+    display: flex;
+    width: 100%;
+    height: max-content;
+    margin-bottom: 30px;
+}
+
+.about_us {
+    display: flex;
+    width: 100%;
+    padding-top: 10%;
+    height: max-content;
+}
+
+.about_gym_img {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.about_gym_img img {
+    width: 70%;
+    height: 70%;
+    border-top: 20px solid orangered;
+    border-left: 20px solid rgb(156, 57, 21);
+}
+
+.about_gym {
+    display: flex;
+    position: relative;
+    top: 10%;
+    flex-direction: column;
+    align-items: start;
+    width: 50%;
+}
+
+.about_gym h2 {
+    font-size: 25px;
+    text-decoration: underline dashed;
+}
+
+.about_gym h3,
+p {
+    font-size: 1.5rem;
+}
+
+.about_gym button {
+    height: 40px;
+    background-color: #ff5722;
+}
+
+.team_member_section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    margin-top: 10%;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 20%;
+    text-align: start;
+}
+
+.title {
+    position: relative;
+    left: 2%;
+}
+
+.title h4 {
+    font-size: 1.5rem;
+    text-decoration: underline dashed;
+}
+
+.title h2 {
+    color: #121252;
+    font-size: 30px;
+}
+
+.team_member {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: max-content;
+    margin-bottom: 5%;
+}
+
+.trainers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+}
+
+.trainer_intro {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.trainer_intro img {
+    width: 100%;
+    height: 450px;
+    margin-bottom: 20px;
+}
+
+.trainer_imfo {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff5722;
+    /* Add the transition property here */
+}
+
+
+.trainer_imfo h1 {
+    font-size: 25px;
+}
+
+.trainer_intro:hover .trainer_imfo {
+    display: flex;
+    height: 100px;
+    top: 74%;
+}
+
+.gym_member {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: max-content;
+    background-color: #121252;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 200px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.link img {
+    width: 40%;
+    height: 40%;
+}
+
+.link h5 {
+    margin: 2%;
+}
+
+/*this css work for fitness_clendar section*/
+.fitness_calendar {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.fitness_calendar_section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    margin-bottom: 50px;
+}
+
+.calendar {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.calendar h1 {
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+.calendar_day {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    padding-top: 221px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.days {
+    display: flex;
+    width: 100%;
+    height: max-content;
+}
+
+.days ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.days ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.days ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+    width: 132px;
+    height: 66px;
+    padding: 0px 6px;
+}
+
+
+.day_plans {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: max-content;
+    align-items: center;
+    justify-content: center;
+}
+
+.plans {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 170px;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff2222d1;
+    text-align: center;
+    margin: 12px 6px;
+
+}
+
+.plans:hover .plans h3,
+h4 {
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+}
+
+.plans .h {
+    background-color: white;
+    color: black;
+}
+
+.plans h4 {
+    color: rgba(253, 248, 248, 0.869);
+}
+
+.plans h4 span {
+    color: rgba(246, 232, 232, 0.724);
+}
+
+.footer_area_section {
+    display: flex;
+    width: 100%;
+    height: max-content;
+    align-items: center;
+}
+
+.footer_center {
+    display: flex;
+    align-items: center;
+    background: url(https://cdn.wallpapersafari.com/71/0/KUmtY1.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.company {
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    justify-content: space-evenly;
+    width: 40%;
+    height: 250px;
+    color: white;
+    margin-left: 5%;
+}
+
+.campany_imfo {
+    width: 100%;
+
+}
+
+.open_hour {
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    justify-content: space-evenly;
+    width: 40%;
+    height: 250px;
+    color: white;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    color: grey;
+}
+
+.list li {
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+
+/*this css work for contact us section*/
+.contact_us {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.contact_us_section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    margin-bottom: 230px;
+}
+
+.contact {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.contact h1 {
+    font-size: 25px;
+    margin: 0px;
+}
+
+.message_section {
+    display: flex;
+    width: 100%;
+    height: max-content;
+    margin-bottom: 80px;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;
+    justify-content: start;*/
+    width: 60%;
+    height: 500px;
+    padding-left: 42px;
+}
+
+.message h1 {
+    color: #121252;
+    font-size: 25px;
+    text-align: left;
+    margin: 0px 0px 20px;
+}
+
+#text_message {
+    font-size: 13px;
+}
+
+.name {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 46px;
+}
+
+.text_name {
+    display: flex;
+    width: 45%;
+
+    height: 40px;
+}
+
+.text_name input {
+    width: 100%;
+    height: 100%;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    /*
+    align-items: center;*/
+    width: 100%;
+    height: fit-content;
+}
+
+.email input {
+    width: 100%;
+    height: 46px;
+    margin-bottom: 3%;
+}
+
+.email .btn {
+    width: 25%;
+    height: 50px;
+}
+
+.adress {
+    display: flex;
+    position: relative;
+    top: 49px;
+    flex-direction: column;
+    width: 40%;
+    height: max-content;
+    margin-bottom: 60px;
+}
+
+.conpany_adress {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 30px;
+}
+
+.company_img img {
+    width: 60px;
+    height: 50px;
+    padding-left: 60px;
+}
+
+.adress_imfo h2,
+h3 {
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.adress_imfo h3 {
+    color: #00000091;
+}
+
+/*this media quary use both in home,about us ,fitness calculator, contact us*/
+@media screen and (max-width:800px) {
+    html {
+        font-size: 13px;
+    }
+
+    /*home_section*/
+    .open_menue {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: white;
+    }
+
+    .close_menue {
+        position: fixed;
+        width: 100%;
+        justify-content: flex-end;
+        display: none;
+    }
+
+    .navbar {
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0;
+        background-color: black;
+        transition: top 3000ms ease;
+        display: none;
+    }
+
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        width: 100%;
+        height: 100vh;
+        background: url(https://img2.goodfon.com/wallpaper/big/d/89/bodybuilding-female-pose.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-position-x: center;
+    }
+
+    .gym {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .gym h1 {
+        font-size: 20px;
+    }
+
+    .gym p,
+    h1 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .gym p {
+        width: 70%;
+    }
+
+    .tour {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img img {
+        width: 70%;
+        height: 90%;
+    }
+
+    .logo_title {
+        justify-content: space-around;
+        width: 25%;
+    }
+
+    .workout_center {
+        margin: 5% 0%;
+    }
+
+    .workout_img img {
+        width: 120px;
+        height: 100px;
+    }
+
+
+    .contact_img h1 {
+        width: 35%;
+    }
+
+    .heading_text {
+        margin-top: 30px;
+    }
+
+    .text {
+        margin-top: 30px;
+        font-size: 1.7rem;
+        color: #121252;
+    }
+
+    .workout {
+        background-color: rgba(255, 255, 255, 0.751);
+        color: black;
+        margin: 20px 0px;
+        border: 10px double #121252;
+    }
+
+    .offer_title h1 {
+        font-size: 20px;
+    }
+
+    .tour_gym_intro,
+    .tour_gym_img {
+        width: 100%;
+        margin: 0px;
+        align-items: center;
+    }
+
+    .tour_gym_intro p {
+        width: 80%;
+    }
+
+    .tour_gym_img .img {
+        width: 50%;
+    }
+
+    /*about section*/
+    .about_us {
+        flex-direction: column;
+    }
+
+    .about_gym_img {
+        width: 100%;
+        justify-content: space-evenly;
+        margin-bottom: 60px;
+    }
+
+    .about_gym {
+        width: 100%;
+        align-items: center;
+    }
+
+    .about_gym p {
+        font-size: 1.5rem;
+        text-align: left;
+        width: 98%;
+    }
+
+    .about_gym button {
+        margin-left: 20px;
+    }
+
+    .title {
+        width: 98%;
+    }
+
+    .title h2 {
+        font-size: 25px;
+    }
+
+    /*contact section*/
+    .message_section {
+        flex-direction: column;
+    }
+
+    .message {
+        width: 80%;
+    }
+
+    .adress {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .footer_center {
+        background: url(https://getbettershape.com/wp-content/uploads/2021/03/build-muscles-after-40.jpg);
+        flex-direction: column;
+        align-items: flex-start;
+        background-position: center;
+    }
+
+    .company,
+    .open_hour {
+        margin: 1%;
+        justify-content: start;
+    }
+}
