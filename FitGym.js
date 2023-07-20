@@ -107,25 +107,50 @@ function show_about_us_body(value) {
         }
     }
 }
-if (window.innerWidth <= 800) {
-    //function for hamburger icon
-    const open = document.querySelector('.open_menue');
-    const close = document.querySelector(`.close_menue`);
-    const nav = document.querySelector('.navbar');
-    function show() {
-        nav.style.display = 'flex';
-        open.style.display = 'none';
-        close.style.display = 'flex';
-        close.style.zIndex = 12;
-    }
 
-    function hid() {
-        nav.style.display = 'none';
-        open.style.display = 'flex';
-        close.style.display = 'none';
-        close.style.zIndex = 0;
-    }
+// Function for showing and hiding the navigation menu
+function show() {
+    const nav = document.querySelector('.navbar');
+    const open = document.querySelector('.open_menue');
+    const close = document.querySelector('.close_menue');
+
+    nav.style.display = 'flex';
+    open.style.display = 'none';
+    close.style.display = 'flex';
+    close.style.zIndex = 12;
 }
+
+function hid() {
+    const nav = document.querySelector('.navbar');
+    const open = document.querySelector('.open_menue');
+    const close = document.querySelector('.close_menue');
+
+    nav.style.display = 'none';
+    open.style.display = 'flex';
+    close.style.display = 'none';
+    close.style.zIndex = 0;
+}
+
+// Add event listener for the 'resize' event to update the hamburger icon behavior
+window.addEventListener('resize', function () {
+    const window_width = window.innerWidth;
+    const nav = document.querySelector('.navbar');
+
+    if (window_width <= 800) {
+        nav.style.display = 'none'; // Hide the navbar on resize
+    } else {
+        nav.style.display = 'flex'; // Show the navbar on resize
+    }
+});
+
+// Add event listener for the initial state when the page loads
+if (window.innerWidth <= 800) {
+    const nav = document.querySelector('.navbar');
+    nav.style.display = 'none'; // Hide the navbar initially on small screens
+}
+
+// Rest of your show_about_us_body function (as provided in your question)
+
 //function for visible content 
 window.addEventListener(`scroll`, reveal);
 
