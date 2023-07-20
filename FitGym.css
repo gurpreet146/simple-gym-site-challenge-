@@ -407,6 +407,7 @@ h1 {
 .about_gym h3,
 p {
     font-size: 1.5rem;
+    text-align: center
 }
 
 .about_gym button {
@@ -837,8 +838,8 @@ h4 {
 
 .adress_imfo h2,
 h3 {
-    font-size: 15px;
-    margin: 0;
+    font-size: 18px;
+    margin: 6px;
     padding: 0;
 }
 
@@ -1012,7 +1013,6 @@ h3 {
 
     .about_gym p {
         font-size: 1.5rem;
-        text-align: left;
         width: 98%;
     }
 
